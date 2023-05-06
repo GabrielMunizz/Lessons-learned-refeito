@@ -7,30 +7,31 @@ body {
 }
 #cabecalho {
     position: fixed;
-    top: 0;
+    display: flex;                   
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #034422;
     width: 100%;
-    height: 50px;
-    text-align: left;
+    height: 50px;    
     border-bottom: 1px solid black;
-    z-index: 1;
+    z-index: 1;  
 }
 #menu {
-  width: 30%;
-  font-family: Arial, Helvetica, sans-serif;
-  display: inline-block;
-  position: relative;
-  bottom: 78%;
-  left: 6%;
+  display: flex;
+  justify-content: left;  
+  width: 65%;
+  font-family: Arial, Helvetica, sans-serif;   
 }
-#menu ul li {    
-    text-decoration: none;   
+#menu ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%; 
+  text-decoration: none;
 }
 #menu ul a {
-  display: inline-block;
+  display: inline-block;    
+  margin-left: 50px;     
   text-decoration: none;  
-  margin-left: 35px;
   font-size: 18px ;
   color: white;  
 }
@@ -39,14 +40,20 @@ body {
   color: #148741;
   transition: 0.3s;  
 }
-#sign_in {
-  position: relative;
-  float: right;
-  bottom: 93%;
-  right: 1%;
+#button-section {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+#sign_in {  
+  display: flex;
+  justify-content: right;  
+  align-items: center;
+  width: 100%;    
 }
 #sign_in li {
-  display: inline-block;      
+  display: inline-block;
+  margin-right: 50px;      
 }
 #sign_in button {
   font-size: 20px;
@@ -70,17 +77,27 @@ body {
   background-color: #0c6d18;
   color: white;
 }
+#logo-trybe {
+  width: 5.5%;
+}
 #logo-trybe img {
   display: inline-block;
-  width: 5.5%;  
+  width: 100%;  
 }
 #logo-trybe:hover {
   cursor: pointer;    
 }
-#content {   
-  margin: 0 auto;
+main {
+  display: flex;
+  justify-content: space-around;        
+  width: 100%;  
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 50px;
-  width: 50%;  
+  margin-left: 50px;  
 }
 #content-title {
   width: 100%;  
@@ -91,24 +108,25 @@ body {
 #content-title h3 {
   font-size: 36px;
   font-family: 'Nunito', sans-serif;
-  color: #034422;
-  
+  color: #034422;  
 }
 #content-title p {
   padding-top: 15px;
   font-size: 20px;  
 }
 #content-2 {
-  width: 100%;
-  height: 300px;   
+  margin-top: 50px;
+  width: 100%;    
   height: 450px;
 }
 .lado-esquerdo { 
   width: 47%;
   display: inline-block;  
-  height: 100%;       
+  height: 100%;
+  position: relative;         
 }
 .lado-esquerdo iframe {
+  display: inline-block;
   position: relative;
   border-radius: 5px;  
 }
@@ -153,7 +171,8 @@ body {
 }
 #content-3 {
   height: 100%;    
-  width: 100%;   
+  width: 100%;
+  margin-top: 50px;   
 }
 #seis-fotos {
   display: inline-block;
@@ -163,8 +182,7 @@ body {
   width: 50%;
   font-family: Arial, Helvetica, sans-serif;  
   position: relative;
-  float: right;
-  left: 8%;
+  float: right;  
   margin-top: 6%;     
 }
 #texto-lateral h3 {
@@ -174,29 +192,24 @@ body {
 #texto-lateral span {
   font-size: 20px ;
 }
-#rodape {
+#texto-lateral span a {
+  text-decoration: none;
+  color: black;
+}
+footer {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 17px;  
   display: inline-block;
+  width: 100%;
   margin-top: 20px;
-  color: black;    
-}
-#list-1{
-  border: 1px solid purple;
-  display: inline-block;
-  height: 100%; 
-  float: right;
-}
-#list-1 ol {
-  list-style: none;
-}
-#list-1 ul {
-  list-style: none;
-}
-#rodape {
+  color: black;
   margin-top: 50px;
   height: 350px;
-  margin-bottom: 50px;
+  margin-bottom: 50px;    
+}
+#content-4 {
+  display: flex;
+  justify-content: center;
 }
 #minha-info {
   display: inline-block;
@@ -218,8 +231,14 @@ width: 200px;
 display: inline-block;  
 }
 #button-container {
-  top: 25%;  
-  position: relative;
+  width: 75.5%;
+  display: flex;  
+  justify-content: right;
+  margin-top: 35px;
+  align-items: center;
+}
+#button-container span {
+  width: 300px;
 }
 #github-button {
   position: relative;   
