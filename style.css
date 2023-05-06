@@ -131,10 +131,11 @@ main {
   border-radius: 5px;  
 }
 #quero_ser-button {
+  display: flex;
+  margin-left: auto;    
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 7px 17px;
-  float: right;
+  padding: 7px 17px;  
   background-color: #0376e2;
   color: #eff1f4;
   border-radius: 5px;
@@ -150,7 +151,6 @@ main {
   line-height: 20px;
   width: 52%;  
   float: right;  
-  position: relative;
   overflow: auto;      
 }
 #card-1, #card-2, #card-3 {  
