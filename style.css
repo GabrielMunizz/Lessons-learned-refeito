@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: fafafa;    
+}
+#cabecalho {
+    position: fixed;
+    display: flex;                   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #034422;
+    width: 100%;
+    height: 50px;    
+    border-bottom: 1px solid black;
+    z-index: 1;  
+}
+#menu {
+  display: flex;
+  justify-content: left;  
+  width: 65%;
+  font-family: Arial, Helvetica, sans-serif;   
+}
+#menu ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%; 
+  text-decoration: none;
+}
+#menu ul a {
+  display: inline-block;    
+  margin-left: 50px;     
+  text-decoration: none;  
+  font-size: 18px ;
+  color: white;  
+}
+#menu ul a:hover {
+  cursor: pointer;
+  color: #148741;
+  transition: 0.3s;  
+}
+#button-section {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+#sign_in {  
+  display: flex;
+  justify-content: right;  
+  align-items: center;
+  width: 100%;    
+}
+#sign_in li {
+  display: inline-block;
+  margin-right: 50px;      
+}
+#sign_in button {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid white;
+  padding: 7px 17px;
+  background-color: #034422;
+  color: white;
+  border-radius: 5px;
+}
+#sign_in button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #034422;
+}
+#button-2 button{
+  background-color: #138a0f;
+  border: 1px solid black;  
+}
+#button-2 button:hover {
+  background-color: #0c6d18;
+  color: white;
+}
+#logo-trybe {
+  width: 5.5%;
+}
+#logo-trybe img {
+  display: inline-block;
+  width: 100%;  
+}
+#logo-trybe:hover {
+  cursor: pointer;    
+}
+main {
+  display: flex;
+  justify-content: space-around;        
+  width: 100%;  
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;  
+}
+#content-title {
+  width: 100%;  
+  height: 120px;
+  padding-top: 40px;
+  display: inline-block;
+}
+#content-title h3 {
+  font-size: 36px;
+  font-family: 'Nunito', sans-serif;
+  color: #034422;  
+}
+#content-title p {
+  padding-top: 15px;
+  font-size: 20px;  
+}
+#content-2 {
+  margin-top: 50px;
+  width: 100%;    
+  height: 450px;
+}
+.lado-esquerdo { 
+  width: 47%;
+  display: inline-block;  
+  height: 100%;
+  position: relative;         
+}
+.lado-esquerdo iframe {
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;  
+}
+
+#quero_ser-button {
+  display: block;
+  margin-left: auto;    
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px 17px;  
+  background-color: #0376e2;
+  color: #eff1f4;
+  border-radius: 5px;
+  border: none;
+  margin-top: 50px;
+}
+#quero_ser-button:hover {
+  cursor: pointer;
+  background-color: #075bbb;
+}
+.lado-direito {    
+  height: 320px;  
+  line-height: 20px;
+  width: 52%;  
+  float: right;  
+  overflow: auto;      
+}
+#card-1, #card-2, #card-3 {  
+  border: 2px solid #eff1f4;
+  background-color: #ffffff;  
+  display: block;  
+  position: relative;  
+  padding: 30px; 
+  border-radius: 5px;
+  width: 70%;
+  margin: 50px;    
+}
+#card-1 {
+  margin-top: 0;
+}
+#card-3 {
+  height: 215px;
+}
+#content-3 {
+  height: 100%;    
+  width: 100%;
+  margin-top: 50px;   
+}
+#seis-fotos {
+  display: inline-block;
+  width: 40%;  
+}
+#texto-lateral {
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;  
+  position: relative;
+  float: right;  
+  margin-top: 6%;     
+}
+#texto-lateral h3 {
+  font-size: 40px;
+  color:#034422
+}
+#texto-lateral span {
+  font-size: 20px ;
+}
+#texto-lateral span a {
+  text-decoration: none;
+  color: black;
+}
+footer {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;  
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  color: black;
+  margin-top: 50px;
+  height: 350px;
+  margin-bottom: 50px;    
+}
+#content-4 {
+  display: flex;
+  justify-content: center;
+}
+#minha-info {
+  display: inline-block;
+  position: relative;  
+  padding: 30px; 
+  border-radius: 5px;
+  border: 2px solid #eff1f4;
+  background-color: #ffffff;
+  bottom: 8%;
+  left: 4%;  
+}
+#minha_foto {
+  width: 100%;    
+  border-radius: 10%;
+  border: 6px solid #036b53;  
+}
+#foto-content {
+width: 200px; 
+display: inline-block;  
+}
+#button-container {
+  width: 75.5%;
+  display: flex;  
+  justify-content: right;
+  margin-top: 35px;
+  align-items: center;
+}
+#button-container span {
+  width: 300px;
+}
+#github-button {
+  position: relative;   
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px 17px;  
+  background-color: #0376e2;
+  color: #eff1f4;
+  border-radius: 5px;
+  border: none;  
+  text-decoration: none;
+}
+#github-button:hover {
+  cursor: pointer;
+  background-color: #075bbb;
+}
+#github-button a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;  
+}
+
